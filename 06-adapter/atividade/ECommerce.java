@@ -1,9 +1,12 @@
 public class ECommerce {
     public static void main(String[] args) {
-        PagamentoAntigo cartao = new PagamentoCartaoCredito();
+        //PagamentoAntigo cartao = new PagamentoCartaoCredito();
         PagamentoAntigo debito = new PagamentoDebito();
-        
-        cartao.processarPagamento(100.0);
-        debito.processarPagamento(50.0);
+        PagamentoFastPay fast = new PagamentoFastPay();
+
+        SistemaX six = new SistemaX(debito);
+        six.efetivarTransacao(100);
+    
+        SistemaX six2 = new SistemaX(fast);
     }
 }
