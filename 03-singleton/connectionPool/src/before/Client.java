@@ -1,4 +1,5 @@
 //pool de conexões sem singleton
+//cada vez que o cliente precisa de uma conexão, ele tem que criar um pool de conexões
 package before;
 import before.conn.Connection;
 import before.conn.ConnectionPool;
