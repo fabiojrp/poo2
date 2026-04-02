@@ -1,3 +1,4 @@
+//pool de conexões sem singleton
 package before;
 import before.conn.Connection;
 import before.conn.ConnectionPool;
