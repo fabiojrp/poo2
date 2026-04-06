@@ -25,9 +25,6 @@ public class Client {
 	}
 
 	public static void main(String[] args) throws InterruptedException {
-		System.out.println("Connection Pool Size: " + ConnectionPool.POOL_SIZE);
-		int pool = ConnectionPool.POOL_SIZE;
-		System.out.println(pool);
 		doQuery1();
 		doQuery2();
 		doQuery3();

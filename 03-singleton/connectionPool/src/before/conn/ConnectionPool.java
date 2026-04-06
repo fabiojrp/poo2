@@ -7,7 +7,7 @@ public class ConnectionPool {
 	private List<Connection> connectionsPool;
 	
 	public ConnectionPool() {
-		System.out.println("Creating Connection Pool");
+		System.out.println("Creating Connection Pool - 2 connections");
 		connectionsPool = new ArrayList<Connection>();
 		for(int i = 0; i < POOL_SIZE; i++) {
 			connectionsPool.add(new Connection());
