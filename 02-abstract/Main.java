@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        
+        /*
         GUIFactory factory;
         String osName = System.getProperty("os.name").toLowerCase();
         if (osName.contains("mac")) {
@@ -10,7 +10,12 @@ public class Main {
         }
         Application app = new Application(factory);
         
-        app.paint();
+        app.paint(); */
+
+
+        GUIFactory factory = new WindowsFactory();
+        
+        Application app = new Application(factory);
     }
     
     
